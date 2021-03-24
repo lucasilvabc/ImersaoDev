@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <title>Imersão Dev - Aula 03</title>
+        <style>
+        body {
+            font-family: 'Roboto Mono',monospace;
+            min-height: 600px;
+            background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-03-mentalista.png');
+            background-color: #000000;
+            background-size: cover;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+        }
+  
+        .container {
+            text-align: center;
+            padding: 20px;
+            height: 100vh;
+        }
+  
+        .page-title {
+            color: #ffffff;
+            margin: 0 0 5px;
+        }
+        
+        .page-subtitle {
+            color: #ffffff;
+            margin-top: 5px;
+        }
+        
+        .page-logo {
+            width: 200px;
+        }
+        h2 {
+            color: #ffffff;
+            position: absolute;
+            font-size:16px;
+            font-weight:bold;
+            top: 142px;
+            left: calc(50% - 72.5px);
+            width: 145px;
+            text-align:center;
+        }
+        
+        .alura-logo {
+            width: 40px;
+            position: absolute;
+            top: 10px;
+            right:10px;
+        }
+        
+        @media (max-height: 500px) {
+            body {
+            min-height:800px;
+            }
+        }
+        </style>
+        <script>
+            var secretNumber = parseInt(Math.random() * 10 )
+            var attempts = 3
+            while (attempts > 0) {
+                var shot = parseFloat(prompt("Enter a number between 0 and 10: "))
+
+                if (secretNumber == shot) {
+                    document.write("<h2>" + "Acertou!" + "</h2>")
+                    break
+                }else if(shot > secretNumber) {
+                    alert("O número secreto é menor")
+                    attempts = attempts - 1
+                }else if(shot < secretNumber) {
+                    alert("O número secreto é maior")
+                    attempts = attempts - 1
+                }
+                }
+
+                if (shot != secretNumber) {
+                document.write("<h2>" + "Suas tentativas acabaram. O número secreto era " + secretNumber + "</h2>")
+                }
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Mentalista
+        </h1>
+        <p class="page-subtitle">
+            Digite um número de 0 a 10. Você tem 3 tentativas!
+        </p>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo"
+            alt="">
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+    <h2></h2>
+</body>
+
+</html>
