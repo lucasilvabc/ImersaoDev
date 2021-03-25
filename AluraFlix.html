@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="eng-us">
+<head>
+<meta charset="utf-8">
+    <title>Imersão Dev - Aula 04</title>
+    <style>
+    body {
+        font-family: 'Roboto Mono',monospace;
+        text-align:center;
+        background-image: url('https://www.copeltelecom.com/site/wp-content/uploads/2020/09/Curiosidades-em-Harry-Potter-e-a-Pedra-Filosofal_.jpg');
+        background-color: #000000;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .page-title {
+        color: #ffffff;
+        margin: 0 0 5px;
+    }
+
+    .page-subtitle {
+        color: #ffffff;
+        margin-top: 5px;
+    }
+
+    .page-logo {
+        width: 200px;
+    }
+
+    .alura-logo {
+        width: 40px;
+        position: absolute;
+        top: 10px;
+        right:10px;
+    }
+
+    body > img {
+        margin: 0 10px;
+    }
+    .box {
+        width: 200px;
+        display: inline-block;
+        background-color:black;
+        margin: 0 10px;
+            
+    }
+
+    nome{
+        margin: 0 10px;
+        color:white;
+        background-color:#000000;  
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+            Aluraflix
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
+            alt="">
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+</body>
+<script>
+    var filmes = ["https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_UX182_CR0,0,182,268_AL_.jpg", "https://m.media-amazon.com/images/M/MV5BMTYzODQzYjQtNTczNC00MzZhLTg1ZWYtZDUxYmQ3ZTY4NzA1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_UX182_CR0,0,182,268_AL_.jpg", "https://m.media-amazon.com/images/M/MV5BMjI5NTM5MDA2N15BMl5BanBnXkFtZTcwNjkwMzQxNw@@._V1_UX182_CR0,0,182,268_AL_.jpg"]
+
+
+    var nomeFilmes = ["Toy Story", "Mulher Maravilha", "Battleship"]
+
+    for (var i = 0; i < filmes.length; i++){
+  document.write("<div class='box'><img src=" + filmes[i]  + "><nome>" + nomeFilmes[i] + "</nome></div>")
+}
+    </script>
+
+</html>
